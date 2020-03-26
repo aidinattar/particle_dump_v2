@@ -1,0 +1,43 @@
+
+---- Modificare Dump_v1 e usare le strutture ----
+
+Creare una struttura "Particle", con membri corrispondenti ai dati
+di ciascuna particella (carica, 3 componenti del momento).
+Creare una struttura "Event", con membri corrispondenti ai dati
+di ciascun evento (identificatore dell'evento, 3 coordinate del punto
+di decadimento, il numero di particelle, un array di pointer alla struttura
+Particle, cioè Particle**).
+
+***
+Usare un array dinamico per la lista dei pointer a Particle, creare 
+anche tutte le strutture Particle dinamicamente.
+
+***
+Creare una funzione "read" che prende come argomento un input
+file stream, legge un evento e restituisce un pointer all'evento o  
+zero alla fine dell'evento. Creare l'evento dinamicamente.
+
+***
+Creare una funzione "dump" che prende come argomento una referenza a 
+un const-event e stampa il dump sullo schermo.
+Scrivere sullo schermo solo i numeri, non aggiungere nessun testo come
+"Numero dell'evento:" o "questo sono le particelle:"; l'output dovrebbe
+essere utilizzabile come input per un programma che segue.
+
+***
+Creare una funzione "clear" che elimina l'evento e il suo contenuto,
+incluse tutte le particelle: prima di tutto elimina tutte le strutture
+Particle, poi eliminare l'array di pointers e alla fine la struttura
+Evento.
+
+***
+Creare una funzione "main" che prende il nome del file dalla stringa
+di comando, leggere il file e chiamare le funzioni dump e il clear.
+
+********* lista finale delle funzioni *********
+
+main                   da fare
+struct Event, Particle da fare
+read                   da fare
+clear                  da fare
+dump                   da fare

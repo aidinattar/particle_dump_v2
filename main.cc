@@ -8,8 +8,8 @@ struct Particle;
 struct Event;
 
 const Event* read( std::ifstream& file );
-void dump( const Event& ev);
-void clear( const Event* ev);
+void dump(  const Event& ev );
+void clear( const Event* ev );
 
 int main( int argc, char* argv[] ) {
 
@@ -21,9 +21,10 @@ int main( int argc, char* argv[] ) {
 
     // loop over events
     while( ( ev = read( file ) ) != 0 ){
+    
         dump( *ev );
         clear( ev );
-        }
+    }
 
     return 0;
 }

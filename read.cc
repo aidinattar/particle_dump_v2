@@ -31,7 +31,7 @@ const Event* read(std::ifstream& file){
     ev->particles = new Particle*[n];
 
     // create the object for the pointer
-    for ( i = 0 ; i < n ; ++i){
+    for ( i = 0 ; i < n ; ++i ){
         Particle* par = new Particle;
         file >> par->q
              >> par->Px
